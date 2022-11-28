@@ -1,5 +1,6 @@
 package com.mindex.challenge;
 
+import com.mindex.challenge.controller.CompensationController;
 import com.mindex.challenge.controller.ReportingStructureController;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -15,9 +16,12 @@ public class ChallengeApplicationTests {
 
 	@Autowired
 	private ReportingStructureController reportingStructureController;
+	@Autowired
+	private CompensationController compensationController;
 	@Test
 	public void contextLoads() {
 		assertNotNull(reportingStructureController);
+		assertNotNull(compensationController);
 	}
 
 }
